@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "CmPrasanmitB";
+    src: url("../../font/CmPrasanmitB.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.sidebar {
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #def9c4;
+    overflow-x: hidden;
+
+}
+
+/* a tage to delete underline */
+#side-home a,
+#side-bill a,
+#side-req a,
+#side-noti a,
+#side-about a {
+    font-family: CmPrasanmitB;
+    font-size: 2.3rem;
+    text-decoration: none;
+    color: #333333;
+}
+
+/* li tage to delete the dot */
+#side-home,
+#side-bill,
+#side-req,
+#side-noti,
+#side-about {
+    list-style-type: none;
+    margin: 0 0 1rem 0;
+    padding: 0rem 0rem 0 2rem;
+}
+
+#ul-in-sidebar{
+    padding: 0;
+    margin: 0;
+}
+
+/* hover to show bf color */
+#ul-in-sidebar li:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+.sidebar-logo {
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar-logo img{
+    width: 250px;
+}
