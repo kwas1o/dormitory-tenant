@@ -61,6 +61,8 @@
     margin-bottom: 1rem;
 }
 
+
+
 .h-bill-label {
     font-size: 2.5rem;
     font-family: CmPrasanmitB;
@@ -76,8 +78,7 @@
 }
 
 .h-mbtr-content {
-    display: flex;
-    width: 35%;
+    width: 38%;
 }
 
 .h-detail-label {
@@ -97,5 +98,36 @@
     font-family: CmPrasanmitB;
     color: #50B498;
     font-size: 2rem;
+    text-decoration: none;
+}
+
+.h-text-header-r {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.h-to-pdf {
+    display: block;
+    padding: 0 1rem;
+    border-radius: 2rem;
+    font-family: CmPrasanmitB;
+    color: #ffffff;
+    background-color: #50B498;
+    font-size: 2.1rem;
+    text-decoration: none;
+}
+
+.h-to-payment {
+    display: block;
+    padding: 0.8rem;
+    text-align: center;
+    margin-top: 1rem ;
+    border-radius: 2rem;
+    font-family: CmPrasanmitB;
+    color: #ffffff;
+    background-color: #50B498;
+    font-size: 2.5rem;
     text-decoration: none;
 }

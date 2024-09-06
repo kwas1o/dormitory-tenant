@@ -1,0 +1,105 @@
+.bill-detail-container {
+  background-color: #f3f3f3;
+  margin-top: 0.5rem;
+  padding: 1rem;
+  border-radius: 0.8rem 0.8rem 0.8rem 0.8rem;
+}
+
+.bill-detail-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bill-header-label {
+  font-size: 2.3rem;
+  font-family: CmPrasanmitR;
+  color: #000000;
+}
+
+.bill-header-month,  
+.bill-total-value,
+.bill-total-label {
+  font-size: 2.5rem;
+  font-family: CmPrasanmitB;
+  color: #000000;
+}
+
+.bill-detail-status,
+.bill-detail-total,
+.bill-detail-water,
+.bill-detail-ele,
+.bill-detail-room,
+.bill-detail-id,
+.bill-detail-tenant,
+.bill-detail-phase,
+.bill-detail-roomnumber,
+.bill-detail-date {
+  width: 100%;
+  display: flex;
+  margin-top: 0.5rem;
+  justify-content: space-between;
+}
+
+
+.bill-status-label {
+  font-size: 2rem;
+  font-family: CmPrasanmitR;
+  color: #000000;
+}
+
+.bill-status-value {
+  font-size: 2rem;
+  font-family: CmPrasanmitB;
+  color: #ff2d2d;
+}
+
+.bill-detail-id,
+.bill-detail-tenant,
+.bill-detail-phase,
+.bill-detail-roomnumber,
+.bill-detail-date {
+    font-size: 2rem;
+    font-family: CmPrasanmitR;
+    color: #000000;
+  }
+
+/* section 2 */
+
+.bill-detail-water,
+.bill-detail-ele,
+.bill-detail-room{
+  font-size: 2.2rem;
+  font-family: CmPrasanmitB;
+  color: #000000;
+  margin: 1rem 0;
+}
+
+.bill-detail-water {
+    margin-bottom: 2rem;
+}
+
+
+.bill-detail-ele{
+    margin: 0;
+}
+.bill-detail-eleper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    font-family: CmPrasanmitR;
+}
+
+/* total */
+/* .bill-total-label {
+    font-size: 2rem;
+    font-family: CmPrasanmitR;
+    color: #000000;
+  } */
+  
+  /* .bill-total-value {
+    font-size: 2.5rem;
+    font-family: CmPrasanmitB;
+    color: #000000;
+  } */
