@@ -1,6 +1,8 @@
 import React from 'react';
 import Sidebar from '../componants/sidebar/sidebar';
 import '../css/home.css';
+import BillsItem from '../componants/item/billsitem';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
@@ -21,6 +23,14 @@ const Home = () => {
                         <p className='h-bill-label'>บิลล์ของฉัน</p>
                         <p className='h-years-label'>ปี 2567</p>
                     </div>
+                    <div className="h-bills-list">
+                        <BillsItem />
+                        <BillsItem />
+                        <BillsItem />
+                        <BillsItem />
+                        <BillsItem />
+                    </div>
+                    <Link className='h-to-allbills-link' to="/all-bills">ดูทั้งหมด...</Link>
                 </div>
                 <div className="h-mbtr-content">
                 <div className="h-text-header-r">

@@ -1,0 +1,67 @@
+
+.bill-item-container {
+    display: flex;
+    background-color: #F3F3F3;
+    margin-top: 0.5rem;
+    padding: 1rem;
+    border-radius: 0.8rem 0.8rem 0.8rem 0.8rem;
+}
+
+
+.bill-item-detail {
+    width: 100%;
+    
+}
+
+.bill-item-icon  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 0.8rem;
+
+}
+
+
+.bill-item-icon img {
+    width: 4rem;
+    height: 4rem;
+}
+
+
+.bill-item-tl{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.bill-item-month{
+    font-size: 2rem;
+    font-family: CmPrasanmitB;
+    color: #000000;
+}
+
+.bill-item-status{
+    font-size: 1.8rem;
+    font-family: CmPrasanmitB;
+    color: #29D281;
+}
+
+.bill-item-btl{
+    width: 100%;
+    display: flex;
+    margin-top: 0.5rem;
+    justify-content: space-between;
+}
+
+.bill-item-total{
+    font-size: 2rem;
+    font-family: CmPrasanmitR;
+    color: #000000;
+}
+
+.bill-item-price{
+    font-size: 2rem;
+    font-family: CmPrasanmitR;
+    color: #000000;
+}
