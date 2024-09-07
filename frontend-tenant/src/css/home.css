@@ -123,11 +123,24 @@
     display: block;
     padding: 0.8rem;
     text-align: center;
-    margin-top: 1rem ;
+    margin-top: 1rem;
     border-radius: 2rem;
     font-family: CmPrasanmitB;
     color: #ffffff;
     background-color: #50B498;
     font-size: 2.5rem;
     text-decoration: none;
+}
+
+.h-to-payment:hover,
+.h-to-pdf:hover {
+    background-color: #3a9c7f;
+}
+
+.h-to-allbills-link:hover {
+    color: #3a9c7f;
+}
+
+#side-home{
+    background-color: #ffffff;
 }

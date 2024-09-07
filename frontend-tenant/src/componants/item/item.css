@@ -7,6 +7,9 @@
     border-radius: 0.8rem 0.8rem 0.8rem 0.8rem;
 }
 
+.bill-item-container:hover {
+    background-color: #ebebeb;
+}
 
 .bill-item-detail {
     width: 100%;
