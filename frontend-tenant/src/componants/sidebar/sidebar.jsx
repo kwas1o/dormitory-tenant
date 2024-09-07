@@ -13,7 +13,7 @@ const Sidebar = () => {
             <nav>
                 <ul id='ul-in-sidebar'>
                     <li id='side-home'><Link to="/">หน้าหลัก</Link></li>
-                    <li id='side-bill'><Link to="/">บิลล์ของฉัน</Link></li>
+                    <li id='side-bill'><Link to="/">ใบแจ้งหนี้</Link></li>
                     <li id='side-req'><Link to="/">ส่งคำร้องขอ</Link></li>
                     <li id='side-noti'><Link to="/">การแจ้งเตือน</Link></li>
                     <li id='side-about'><Link to="/">เกี่ยวกับฉัน</Link></li>

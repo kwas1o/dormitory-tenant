@@ -5,6 +5,7 @@ import BillsItem from "../componants/item/billsitem";
 import { Link } from "react-router-dom";
 import BillsDetail from "../componants/itemdetail/billsdetail";
 import Modal from "../componants/modal/modal"; // Import Modal component
+import PaymentDetail from "../componants/payment/paymentdetail";
 
 const Home = () => {
   const [showModal, setShowModal] = useState(false);
@@ -32,7 +33,7 @@ const Home = () => {
         <div className="h-mbt-content">
           <div className="h-mbtl-content">
             <div className="h-text-header-l">
-              <p className="h-bill-label">บิลล์ของฉัน</p>
+              <p className="h-bill-label">ใบแจ้งหนี้</p>
               <p className="h-years-label">ปี 2567</p>
             </div>
             <div className="h-bills-list">
@@ -65,9 +66,7 @@ const Home = () => {
 
       {/* Modal for payment */}
       <Modal show={showModal} handleClose={handleCloseModal}>
-        <h2>ยืนยันการชำระเงิน</h2>
-        <p>รายละเอียดการชำระเงินของคุณ</p>
-        <button onClick={handleCloseModal}>ปิด</button>
+        <PaymentDetail />
       </Modal>
     </div>
   );

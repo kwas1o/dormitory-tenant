@@ -1,0 +1,181 @@
+@tailwind components;
+@tailwind utilities;
+
+.payment-detail-container {
+  background-color: #ffffff;
+  margin-top: 0.5rem;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.payment-detail-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.payment-header-label {
+  font-size: 2.5rem;
+  font-family: CmPrasanmitB;
+  color: #000000;
+}
+
+.payment-header-month,
+.payment-total-value,
+.payment-total-label {
+  font-size: 2.5rem;
+  font-family: CmPrasanmitB;
+  color: #000000;
+}
+
+.payment-detail-status,
+.payment-detail-total,
+.payment-detail-room,
+.payment-detail-id,
+.payment-detail-tenant,
+.payment-detail-phase,
+.payment-detail-roomnumber,
+.payment-detail-date {
+  width: 100%;
+  display: flex;
+  margin-top: 0.5rem;
+  justify-content: space-between;
+}
+
+.payment-status-label {
+  font-size: 2rem;
+  font-family: CmPrasanmitR;
+  color: #000000;
+}
+
+.payment-status-value {
+  font-size: 2rem;
+  font-family: CmPrasanmitB;
+  color: #ff2d2d;
+}
+
+.payment-detail-id,
+.payment-detail-tenant,
+.payment-detail-phase,
+.payment-detail-roomnumber,
+.payment-detail-date {
+  font-size: 2rem;
+  font-family: CmPrasanmitR;
+  color: #000000;
+}
+
+/* section 2 */
+
+.payment-detail-receipt,
+.payment-detail-method,
+.payment-detail-room,
+.payment-detail-total {
+  font-size: 2.2rem;
+  font-family: CmPrasanmitB;
+  color: #000000;
+  margin: 1rem 0;
+}
+
+.payment-detail-water {
+  margin-bottom: 0;
+}
+
+.payment-detail-method {
+  margin: 0;
+}
+
+.payment-method-qrcode{
+  display: flex;
+  margin-top: 0.5rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+
+.payment-method-qrcode img{
+  width: 180px;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.payment-method-qrcode-des{
+  font-size: 1.8rem;
+  font-family: CmPrasanmitR;
+  color: #000000;
+  text-align: center;
+}
+.payment-receipt-input {
+  justify-content: space-between;
+}
+
+.payment-receipt-re {
+  justify-content: space-between;
+  /* background-color: #dbf4ff; */
+  border-radius: 0.5rem;
+  margin-top: 0.8rem;
+  padding: 0.3rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.payment-receipt-re:hover {
+  /* background-color: #92dbff; */
+}
+
+.payment-receipt-input span {
+  font-family: CmPrasanmitR;
+  font-size: 2rem;
+  color: #545454;
+}
+.payment-detail-submit {
+  margin-top: 2rem;
+  background-color: #50b498;
+  text-align: center;
+  border-radius: 2rem;
+  text-decoration: none;
+  padding: 0.6rem;
+}
+
+.payment-detail-submit:hover {
+  background-color: #3a9c7f;
+}
+
+.payment-detail-submit button {
+  font-size: 2.5rem;
+  font-family: CmPrasanmitB;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  color: #ffffff;
+}
+
+.selected-file {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.8rem;
+  font-family: CmPrasanmitR;
+  
+}
+
+.file-name {
+  margin-right: 10px;
+}
+
+.remove-file {
+  background-color: #ff4d4f;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 1rem;
+  margin-left: 1rem;
+  font-size: 1.3rem;
+  font-family: CmPrasanmitB;
+  
+}
+
