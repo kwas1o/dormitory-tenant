@@ -16,7 +16,7 @@ const About = () => {
       <div className="a-main-content">
         <div className="a-mbt-content">
           <div className="a-text-header">
-            <p className="a-bill-label">เกี่ยวกับฉัน</p>
+            <p className="a-about-label">เกี่ยวกับฉัน</p>
           </div>
           
           <div className="a-detail-allabout">
