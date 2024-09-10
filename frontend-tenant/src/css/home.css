@@ -50,8 +50,17 @@
 }
 
 .h-mbtl-content {
-    width: 60%;
+    width: 100%;
     box-sizing: border-box;
+}
+
+.h-mbtl-content-selected {
+    width: 60%; /* Shrink to 60% when a bill is selected */
+}
+
+.h-mbtr-content {
+    width: 38%;
+    display: block; 
 }
 
 .h-text-header-l {
@@ -77,9 +86,7 @@
     justify-content: center;
 }
 
-.h-mbtr-content {
-    width: 38%;
-}
+
 
 .h-detail-label {
     font-size: 2.5rem;

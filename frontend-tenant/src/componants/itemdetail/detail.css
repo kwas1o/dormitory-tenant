@@ -34,7 +34,8 @@
 .bill-detail-tenant,
 .bill-detail-phase,
 .bill-detail-roomnumber,
-.bill-detail-date {
+.bill-detail-date,
+.bill-detail-building {
   width: 100%;
   display: flex;
   margin-top: 0.5rem;
@@ -58,7 +59,8 @@
 .bill-detail-tenant,
 .bill-detail-phase,
 .bill-detail-roomnumber,
-.bill-detail-date {
+.bill-detail-date,
+.bill-detail-building {
     font-size: 2rem;
     font-family: CmPrasanmitR;
     color: #000000;

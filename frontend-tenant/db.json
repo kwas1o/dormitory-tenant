@@ -1,0 +1,125 @@
+{
+  "uuid": "86f5ac12-5328-4760-adac-f2b0abd6c3ec",
+  "lastMigration": 32,
+  "name": "Db",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3000,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "79b54328-038c-457c-b33e-a1517d110a08",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "getBills",
+      "responses": [
+        {
+          "uuid": "420998fb-749e-4b8e-baa5-3d978f76a4fe",
+          "body": "[\r\n  {\r\n    \"id\": 125110154451,\r\n    \"month\": \"เมษายน\",\r\n    \"year\": \"2567\",\r\n    \"status\": \"ค้างชำระ\",\r\n    \"tenant\": \"วรรธนะ เสี้ยมแหลม\",\r\n    \"building\":\"A\",\r\n    \"room\": \"606\",\r\n    \"timestamp\": \"27 มีนาคม 2567\",\r\n    \"roomprice\": \"6500\",\r\n    \"eleprice\" : \"1500\",\r\n    \"eleunitused\":\"50\",\r\n    \"waterprice\":\"150\",\r\n    \"amount\": \"8502.55\"\r\n  },\r\n  {\r\n    \"id\": 215515151122,\r\n    \"month\": \"มีนาคม\",\r\n    \"year\": \"2567\",\r\n    \"status\": \"ชำระแล้ว\",\r\n    \"tenant\": \"วรรธนะ เสี้ยมแหลม\",\r\n    \"building\":\"A\",\r\n    \"room\": \"606\",\r\n    \"timestamp\": \"27 มีนาคม 2567\",\r\n    \"roomprice\": \"6500\",\r\n    \"eleprice\" : \"1500\",\r\n    \"eleunitused\":\"50\",\r\n    \"waterprice\":\"150\",\r\n    \"amount\": \"9002.55\"\r\n  },\r\n  {\r\n    \"id\": 328411515511,\r\n    \"month\": \"กุมภาพันธ์\",\r\n    \"year\": \"2567\",\r\n    \"status\": \"ชำระแล้ว\",\r\n    \"tenant\": \"วรรธนะ เสี้ยมแหลม\",\r\n    \"building\":\"A\",\r\n    \"room\": \"606\",\r\n    \"timestamp\": \"27 มีนาคม 2567\",\r\n    \"roomprice\": \"6500\",\r\n    \"eleprice\" : \"1500\",\r\n    \"eleunitused\":\"50\",\r\n    \"waterprice\":\"150\",\r\n    \"amount\": \"7502.05\"\r\n  },\r\n    {\r\n    \"id\": 454115148115,\r\n    \"month\": \"มกราคม\",\r\n    \"year\": \"2567\",\r\n    \"status\": \"ชำระแล้ว\",\r\n    \"tenant\": \"วรรธนะ เสี้ยมแหลม\",\r\n    \"building\":\"A\",\r\n    \"room\": \"606\",\r\n    \"timestamp\": \"27 มีนาคม 2567\",\r\n    \"roomprice\": \"6500\",\r\n    \"eleprice\" : \"1500\",\r\n    \"eleunitused\":\"50\",\r\n    \"waterprice\":\"150\",\r\n    \"amount\": \"9502.55\"\r\n  }\r\n]\r\n",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "6a073291-6a31-471e-b074-c357532c45de",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "getUser",
+      "responses": [
+        {
+          "uuid": "c855a06f-8684-4f53-96e4-57e43eb6af54",
+          "body": "[\r\n  {\r\n    \"year\": \"2567\",\r\n    \"tenant\": \"วรรธนะ เสี้ยมแหลม\"\r\n  }\r\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "79b54328-038c-457c-b33e-a1517d110a08"
+    },
+    {
+      "type": "route",
+      "uuid": "6a073291-6a31-471e-b074-c357532c45de"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": [],
+  "callbacks": []
+}

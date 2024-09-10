@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./payment.css";
 import qrcode from "../../assets/qrcode.png";
 
-const PaymentDetail = () => {
+const PaymentDetail = ({ bill }) => {
   const [selectedFile, setSelectedFile] = useState(null);
 
   // Handle file input change
@@ -20,20 +20,20 @@ const PaymentDetail = () => {
     <div className="payment-detail-container">
       <div className="payment-detail-header">
         <p className="payment-header-label">ใบแจ้งหนี้ประจำเดือน</p>
-        <p className="payment-header-month">มีนาคม 2567</p>
+        <p className="payment-header-month">{bill.month} {bill.year}</p>
       </div>
       <div className="payment-detail-id">
         <p className="payment-id-label">เลขที่</p>
-        <p className="payment-id-value">35515451548451</p>
+        <p className="payment-id-value">{bill.id}</p>
       </div>
       <div className="payment-detail-tenant">
         <p className="payment-tenant-label">ผู้เช่า</p>
-        <p className="payment-tenant-value">ดุจอัปสร เทวพรหม</p>
+        <p className="payment-tenant-value">{bill.tenant}</p>
       </div>
       {/* section 2 */}
       <div className="payment-detail-total">
         <p className="payment-total-label">ยอดเงินสุทธิ</p>
-        <p className="payment-total-value">8000.36 บาท</p>
+        <p className="payment-total-value">{bill.amount}</p>
       </div>
       <div>
         <div className="payment-detail-method">

@@ -2,20 +2,30 @@ import React from "react";
 import "./item.css";
 import invoice from "../../assets/invoice.png";
 
-const BillsItem = () => {
+const BillsItem = ({ bill, onClick, isSelected }) => {
   return (
-    <div className="bill-item-container">
+    <div
+      className={`bill-item-container ${isSelected ? "bill-item-container-selected" : ""}`}
+      onClick={onClick}
+    >
       <div className="bill-item-icon">
         <img src={invoice} alt="" />
       </div>
       <div className="bill-item-detail">
         <div className="bill-item-tl">
-          <p className="bill-item-month">กุมภาพันธ์</p>
-          <p className="bill-item-status">ชำระแล้ว</p>
+          <p className="bill-item-month">{bill.month}</p>
+          <p
+            className="bill-item-status"
+            style={{
+              color: bill.status === "ค้างชำระ" ? "#FF2D2D" : "#29D281",
+            }}
+          >
+            {bill.status}
+          </p>
         </div>
         <div className="bill-item-btl">
           <p className="bill-item-total">ยอดเงินสุทธิ</p>
-          <p className="bill-item-price">7000.36 บาท</p>
+          <p className="bill-item-price">{bill.amount} บาท</p>
         </div>
       </div>
     </div>

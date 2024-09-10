@@ -8,10 +8,20 @@
     border-radius: 0.8rem 0.8rem 0.8rem 0.8rem;
 }
 
+.bill-item-container-selected {
+    background-color: #DEF9C4;
+}
+
+
 .bill-item-container:hover,
 .notification-item-container:hover {
     background-color: #ebebeb;
 }
+
+.bill-item-container-selected:hover {
+    background-color: #DEF9C4;
+}
+
 
 .bill-item-detail,
 .notification-item-detail {
@@ -27,8 +37,6 @@
     margin-right: 0.8rem;
 
 }
-
-
 
 
 
