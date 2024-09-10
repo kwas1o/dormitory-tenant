@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import axios from 'axios';
 import Sidebar from "../componants/sidebar/sidebar";
 import "../css/home.css";
 import BillsItem from "../componants/item/billsitem";
@@ -10,22 +11,59 @@ import PaymentDetail from "../componants/payment/paymentdetail";
 const Home = () => {
   const [showModal, setShowModal] = useState(false);
   const [selectedBillId, setSelectedBillId] = useState(null);
-  const [billsData, setBillsData] = useState([]); // State to hold JSON data
-  const [userData, setUserData] = useState([]); // State to hold JSON data
-  const [selectedBill, setSelectedBill] = useState(null); // State to hold the selected bill for payment
+  const [billsData, setBillsData] = useState([]); 
+  const [userData, setUserData] = useState([]); 
+  const [selectedBill, setSelectedBill] = useState(null); 
 
-  // Fetch the JSON file on component mount
   useEffect(() => {
-    fetch("http://localhost:3000/getBills") // Replace with your JSON file path
-      .then((response) => response.json())
-      .then((data) => setBillsData(data)) // Save JSON data in state
-      .catch((error) => console.error("Error loading JSON:", error));
 
-    fetch("http://localhost:3000/getUser") // Replace with your JSON file path
-      .then((response) => response.json())
-      .then((data) => setUserData(data)) // Save JSON data in state
-      .catch((error) => console.error("Error loading JSON:", error));
+    localStorage.setItem('userKey', 'wasik0lv'); 
+    const token = localStorage.getItem('userKey'); 
+    
+    const fetchUserBills = async () => {
+      
+      try {
+        const response = await axios.get('http://localhost:3000/getBills', {
+          headers: {
+            'Authorization': `Bearer ${token}` // ส่งคีย์ไปยืนยันตัวตน
+          }
+        });
+        
+        // Store the data in the component's state
+        setBillsData(response.data.bill);
+  
+
+      } catch (error) {
+        console.error('Failed to fetch data');
+      }
+    };
+
+    const fetchUserName = async () => {
+      
+      try {
+        const response = await axios.get('http://localhost:3000/getUser', {
+          headers: {
+            'Authorization': `Bearer ${token}` // ส่งคีย์ไปยืนยันตัวตน
+          }
+        });
+        
+        // Store the data in the component's state
+        setUserData(response.data.username);
+        console.error('response.data: ', response.data);
+  
+
+      } catch (error) {
+        console.error('Failed to fetch data');
+      }
+    };
+
+
+
+    fetchUserBills();
+    fetchUserName();
+
   }, []);
+
 
   const handlePaymentClick = () => {
     setShowModal(true);
@@ -40,10 +78,7 @@ const Home = () => {
     setSelectedBill(billsData.find((bill) => bill.id === billId)); // Set the selected bill details
   };
 
-  const selectedBillDetails = billsData.find(
-    (bill) => bill.id === selectedBillId
-  );
-
+ 
   return (
     <div className="home-container">
       <div className="h-sidebar">
@@ -80,9 +115,10 @@ const Home = () => {
                 />
               ))}
             </div>
-            <Link className="h-to-allbills-link" to="/all-bills">
-              ดูทั้งหมด...
-            </Link>
+            <div className="h-to-allbills-link">
+              <Link to="/all-bills">ดูทั้งหมด...
+              </Link>
+            </div>
           </div>
 
           {/* Display right section if a bill is selected */}
@@ -96,9 +132,11 @@ const Home = () => {
               </div>
               <div className="h-bills-detail">
                 <BillsDetail bill={selectedBill} />
-                <Link className="h-to-payment" onClick={handlePaymentClick}>
-                  ชำระเงิน
-                </Link>
+                {selectedBill.status === "ค้างชำระ" && (
+                  <Link className="h-to-payment" onClick={handlePaymentClick}>
+                    ชำระเงิน
+                  </Link>
+                )}
               </div>
             </div>
           )}

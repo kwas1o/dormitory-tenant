@@ -17,7 +17,7 @@
       "responses": [
         {
           "uuid": "420998fb-749e-4b8e-baa5-3d978f76a4fe",
-          "body": "[\r\n  {\r\n    \"id\": 125110154451,\r\n    \"month\": \"เมษายน\",\r\n    \"year\": \"2567\",\r\n    \"status\": \"ค้างชำระ\",\r\n    \"tenant\": \"วรรธนะ เสี้ยมแหลม\",\r\n    \"building\":\"A\",\r\n    \"room\": \"606\",\r\n    \"timestamp\": \"27 มีนาคม 2567\",\r\n    \"roomprice\": \"6500\",\r\n    \"eleprice\" : \"1500\",\r\n    \"eleunitused\":\"50\",\r\n    \"waterprice\":\"150\",\r\n    \"amount\": \"8502.55\"\r\n  },\r\n  {\r\n    \"id\": 215515151122,\r\n    \"month\": \"มีนาคม\",\r\n    \"year\": \"2567\",\r\n    \"status\": \"ชำระแล้ว\",\r\n    \"tenant\": \"วรรธนะ เสี้ยมแหลม\",\r\n    \"building\":\"A\",\r\n    \"room\": \"606\",\r\n    \"timestamp\": \"27 มีนาคม 2567\",\r\n    \"roomprice\": \"6500\",\r\n    \"eleprice\" : \"1500\",\r\n    \"eleunitused\":\"50\",\r\n    \"waterprice\":\"150\",\r\n    \"amount\": \"9002.55\"\r\n  },\r\n  {\r\n    \"id\": 328411515511,\r\n    \"month\": \"กุมภาพันธ์\",\r\n    \"year\": \"2567\",\r\n    \"status\": \"ชำระแล้ว\",\r\n    \"tenant\": \"วรรธนะ เสี้ยมแหลม\",\r\n    \"building\":\"A\",\r\n    \"room\": \"606\",\r\n    \"timestamp\": \"27 มีนาคม 2567\",\r\n    \"roomprice\": \"6500\",\r\n    \"eleprice\" : \"1500\",\r\n    \"eleunitused\":\"50\",\r\n    \"waterprice\":\"150\",\r\n    \"amount\": \"7502.05\"\r\n  },\r\n    {\r\n    \"id\": 454115148115,\r\n    \"month\": \"มกราคม\",\r\n    \"year\": \"2567\",\r\n    \"status\": \"ชำระแล้ว\",\r\n    \"tenant\": \"วรรธนะ เสี้ยมแหลม\",\r\n    \"building\":\"A\",\r\n    \"room\": \"606\",\r\n    \"timestamp\": \"27 มีนาคม 2567\",\r\n    \"roomprice\": \"6500\",\r\n    \"eleprice\" : \"1500\",\r\n    \"eleunitused\":\"50\",\r\n    \"waterprice\":\"150\",\r\n    \"amount\": \"9502.55\"\r\n  }\r\n]\r\n",
+          "body": "{\r\n  \"response\": \"success\",\r\n   \"bill\": [\r\n    {\r\n      \"id\": 125115554451,\r\n      \"month\": \"พฤษภาคม\",\r\n      \"year\": \"2567\",\r\n      \"status\": \"ค้างชำระ\",\r\n      \"tenant\": \"วรรธนะ เสี้ยมแหลม\",\r\n      \"building\": \"A\",\r\n      \"room\": \"606\",\r\n      \"timestamp\": \"27 มีนาคม 2567\",\r\n      \"roomprice\": \"6500\",\r\n      \"eleprice\": \"2500\",\r\n      \"eleunitused\": \"50\",\r\n      \"waterprice\": \"150\",\r\n      \"amount\": \"10202.55\"\r\n    },\r\n    {\r\n      \"id\": 125110154451,\r\n      \"month\": \"เมษายน\",\r\n      \"year\": \"2567\",\r\n      \"status\": \"ชำระแล้ว\",\r\n      \"tenant\": \"วรรธนะ เสี้ยมแหลม\",\r\n      \"building\": \"A\",\r\n      \"room\": \"606\",\r\n      \"timestamp\": \"27 มีนาคม 2567\",\r\n      \"roomprice\": \"6500\",\r\n      \"eleprice\": \"1500\",\r\n      \"eleunitused\": \"50\",\r\n      \"waterprice\": \"150\",\r\n      \"amount\": \"8502.55\"\r\n    },\r\n    {\r\n      \"id\": 215515151122,\r\n      \"month\": \"มีนาคม\",\r\n      \"year\": \"2567\",\r\n      \"status\": \"ชำระแล้ว\",\r\n      \"tenant\": \"วรรธนะ เสี้ยมแหลม\",\r\n      \"building\": \"A\",\r\n      \"room\": \"606\",\r\n      \"timestamp\": \"27 มีนาคม 2567\",\r\n      \"roomprice\": \"6500\",\r\n      \"eleprice\": \"1700\",\r\n      \"eleunitused\": \"50\",\r\n      \"waterprice\": \"150\",\r\n      \"amount\": \"9002.55\"\r\n    },\r\n    {\r\n      \"id\": 328411515511,\r\n      \"month\": \"กุมภาพันธ์\",\r\n      \"year\": \"2567\",\r\n      \"status\": \"ชำระแล้ว\",\r\n      \"tenant\": \"วรรธนะ เสี้ยมแหลม\",\r\n      \"building\": \"A\",\r\n      \"room\": \"606\",\r\n      \"timestamp\": \"27 มีนาคม 2567\",\r\n      \"roomprice\": \"6500\",\r\n      \"eleprice\": \"1200\",\r\n      \"eleunitused\": \"50\",\r\n      \"waterprice\": \"150\",\r\n      \"amount\": \"7502.05\"\r\n    },\r\n    {\r\n      \"id\": 454115148115,\r\n      \"month\": \"มกราคม\",\r\n      \"year\": \"2567\",\r\n      \"status\": \"ชำระแล้ว\",\r\n      \"tenant\": \"วรรธนะ เสี้ยมแหลม\",\r\n      \"building\": \"A\",\r\n      \"room\": \"606\",\r\n      \"timestamp\": \"27 มีนาคม 2567\",\r\n      \"roomprice\": \"6500\",\r\n      \"eleprice\": \"1900\",\r\n      \"eleunitused\": \"50\",\r\n      \"waterprice\": \"150\",\r\n      \"amount\": \"9502.55\"\r\n    }\r\n  ]\r\n}\r\n",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -26,11 +26,46 @@
           "filePath": "",
           "databucketID": "",
           "sendFileAsBody": false,
-          "rules": [],
+          "rules": [
+            {
+              "target": "header",
+              "modifier": "Authorization",
+              "value": "Bearer wasik0lv",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
           "rulesOperator": "OR",
           "disableTemplating": false,
           "fallbackTo404": false,
           "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "bae68a20-a360-4ab0-8d2c-e2c6dad9e356",
+          "body": "{\r\n  \"response\": \"error\"\r\n}",
+          "latency": 0,
+          "statusCode": 401,
+          "label": "ีError Unauthorized ",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "header",
+              "modifier": "Authorization",
+              "value": "Bearer wasik0lv",
+              "invert": true,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
           "crudKey": "id",
           "callbacks": []
         }
@@ -46,7 +81,7 @@
       "responses": [
         {
           "uuid": "c855a06f-8684-4f53-96e4-57e43eb6af54",
-          "body": "[\r\n  {\r\n    \"year\": \"2567\",\r\n    \"tenant\": \"วรรธนะ เสี้ยมแหลม\"\r\n  }\r\n]",
+          "body": "{\r\n  \"response\": \"success\",\r\n  \"username\": [\r\n    {\r\n      \"year\": \"2567\",\r\n      \"tenant\": \"วรรธนะ เสี้ยมแหลม\"\r\n    }\r\n  ]\r\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -55,11 +90,46 @@
           "filePath": "",
           "databucketID": "",
           "sendFileAsBody": false,
-          "rules": [],
+          "rules": [
+            {
+              "target": "header",
+              "modifier": "Authorization",
+              "value": "Bearer wasik0lv",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
           "rulesOperator": "OR",
           "disableTemplating": false,
           "fallbackTo404": false,
           "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "23b55b33-c8ac-435c-984f-465dce9651a3",
+          "body": "{\r\n  \"response\": \"error\"\r\n}",
+          "latency": 0,
+          "statusCode": 401,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "header",
+              "modifier": "Authorization",
+              "value": "Bearer wasik0lv",
+              "invert": true,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
           "crudKey": "id",
           "callbacks": []
         }

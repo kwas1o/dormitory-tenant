@@ -101,12 +101,16 @@
 .h-to-allbills-link {
     display: block;
     text-align: end;
+}
+
+.h-to-allbills-link a {
     line-height: 2;
     font-family: CmPrasanmitB;
     color: #50B498;
     font-size: 2rem;
     text-decoration: none;
 }
+
 
 .h-text-header-r {
     width: 100%;
@@ -144,7 +148,7 @@
     background-color: #3a9c7f;
 }
 
-.h-to-allbills-link:hover {
+.h-to-allbills-link a:hover {
     color: #3a9c7f;
 }
 
