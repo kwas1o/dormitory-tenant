@@ -33,7 +33,7 @@ const PaymentDetail = ({ bill }) => {
       {/* section 2 */}
       <div className="payment-detail-total">
         <p className="payment-total-label">ยอดเงินสุทธิ</p>
-        <p className="payment-total-value">{bill.amount}</p>
+        <p className="payment-total-value">{bill.amount} บาท</p>
       </div>
       <div>
         <div className="payment-detail-method">

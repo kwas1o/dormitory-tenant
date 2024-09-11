@@ -135,6 +135,70 @@
         }
       ],
       "responseMode": null
+    },
+    {
+      "uuid": "d99ae728-987b-4932-8848-21cdbcd7957b",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "getRequest",
+      "responses": [
+        {
+          "uuid": "56e99a3c-cd3e-43dd-ad88-04584e3b0fd7",
+          "body": "{\r\n  \"response\": \"success\",\r\n  \"request\": [\r\n    {\r\n      \"id\": 125115554451,\r\n      \"typeid\": \"1\",\r\n      \"status\": \"รอดำเนินการ\",\r\n      \"des\": \"สวัสดีค่ะพี่ หลอดไฟหนูเปิดไม่ติดมาหลายปีแล้วค่ะ เมื่อไหร่จะเข้ามาซ่อมให้คะ อย่าให้หนูด่าเลยค่ะ หนูมีทนายประจำตระกูลนะค่ะ ถ้าจะเข้ามาติดต่อมาที่เบอร์ก่อนเด้อจ้าสิมารอเปิดห้องให้จ้า\",\r\n      \"tel\": \"0656157189\",\r\n      \"timestamp\": \"27 มีนาคม 2567 16:57\",\r\n      \"broken\": \"เครื่องปรับอากาศ\"\r\n    },\r\n    {\r\n      \"id\": 1251144554451,\r\n      \"typeid\": \"2\",\r\n      \"status\": \"ไม่ดำเนินการ\",\r\n      \"des\": \"สวัสดีค่ะพี่ หลอดไฟหนูเปิดไม่ติดมาหลายปีแล้วค่ะ เมื่อไหร่จะเข้ามาซ่อมให้คะ อย่าให้หนูด่าเลยค่ะ หนูมีทนายประจำตระกูลนะค่ะ ถ้าจะเข้ามาติดต่อมาที่เบอร์ก่อนเด้อจ้าสิมารอเปิดห้องให้จ้า\",\r\n      \"tel\": \"0656157189\",\r\n      \"timestamp\": \"27 มีนาคม 2567 16:57\",\r\n      \"ppmonth\": \"มีนาคม 2567\",\r\n      \"paydate\": \"01 สิงหาคม 2567\"\r\n    },\r\n    {\r\n      \"id\": 124741555451,\r\n      \"typeid\": \"3\",\r\n      \"status\": \"ดำเนินการแล้ว\",\r\n      \"des\": \"สวัสดีค่ะพี่ หลอดไฟหนูเปิดไม่ติดมาหลายปีแล้วค่ะ เมื่อไหร่จะเข้ามาซ่อมให้คะ อย่าให้หนูด่าเลยค่ะ หนูมีทนายประจำตระกูลนะค่ะ ถ้าจะเข้ามาติดต่อมาที่เบอร์ก่อนเด้อจ้าสิมารอเปิดห้องให้จ้า\",\r\n      \"tel\": \"0656157189\",\r\n      \"timestamp\": \"27 มีนาคม 2567 16:57\",\r\n      \"leasetype\": \"12 เดือน\"\r\n    },\r\n    {\r\n      \"id\": 125445554451,\r\n      \"typeid\": \"4\",\r\n      \"status\": \"ดำเนินการแล้ว\",\r\n      \"des\": \"สวัสดีค่ะพี่ หลอดไฟหนูเปิดไม่ติดมาหลายปีแล้วค่ะ เมื่อไหร่จะเข้ามาซ่อมให้คะ อย่าให้หนูด่าเลยค่ะ หนูมีทนายประจำตระกูลนะค่ะ ถ้าจะเข้ามาติดต่อมาที่เบอร์ก่อนเด้อจ้าสิมารอเปิดห้องให้จ้า\",\r\n      \"tel\": \"0656157189\",\r\n      \"timestamp\": \"27 มีนาคม 2567 16:57\",\r\n      \"exitdate\": \"01 มีนาคม 2568\"\r\n    }\r\n  ]\r\n}\r\n",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "header",
+              "modifier": "Authorization",
+              "value": "Bearer wasik0lv",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "412387a2-3193-461c-b29a-30f5f9b9d883",
+          "body": "{\r\n  \"response\": \"error\"\r\n}",
+          "latency": 0,
+          "statusCode": 401,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "header",
+              "modifier": "Authorization",
+              "value": "Bearer wasik0lv",
+              "invert": true,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
     }
   ],
   "rootChildren": [
@@ -145,6 +209,10 @@
     {
       "type": "route",
       "uuid": "6a073291-6a31-471e-b074-c357532c45de"
+    },
+    {
+      "type": "route",
+      "uuid": "d99ae728-987b-4932-8848-21cdbcd7957b"
     }
   ],
   "proxyMode": false,

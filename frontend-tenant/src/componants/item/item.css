@@ -1,94 +1,93 @@
-
 .bill-item-container,
 .notification-item-container {
-    display: flex;
-    background-color: #F3F3F3;
-    margin-top: 0.5rem;
-    padding: 1rem;
-    border-radius: 0.8rem 0.8rem 0.8rem 0.8rem;
+  display: flex;
+  background-color: #f3f3f3;
+  margin-top: 0.5rem;
+  padding: 1rem;
+  border-radius: 0.8rem 0.8rem 0.8rem 0.8rem;
 }
 
 .bill-item-container-selected {
-    background-color: #DEF9C4;
+  background-color: #def9c4;
 }
-
 
 .bill-item-container:hover,
 .notification-item-container:hover {
-    background-color: #ebebeb;
+  background-color: #ebebeb;
 }
 
 .bill-item-container-selected:hover {
-    background-color: #DEF9C4;
+  background-color: #def9c4;
 }
-
 
 .bill-item-detail,
 .notification-item-detail {
-    width: 100%;
-    
+  width: 100%;
 }
 
 .bill-item-icon,
+.request-item-icon,
 .notification-item-icon {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-right: 0.8rem;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 0.8rem;
 }
 
 
 
 .bill-item-icon img {
-    width: 4rem;
-    height: 4rem;
+  width: 4rem;
+  height: 4rem;
 }
 
 .notification-item-icon img {
-    width: 3rem;
-    height: 3rem;
+  width: 3rem;
+  height: 3rem;
 }
 
+.request-item-icon img {
+  width: 3rem;
+  height: 3rem;
+}
 
-.bill-item-tl{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-
+.bill-item-tl {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .bill-item-month,
-.notification-item-label{
-    font-size: 2rem;
-    font-family: CmPrasanmitB;
-    color: #000000;
+.notification-item-label {
+  font-size: 2rem;
+  font-family: CmPrasanmitB;
+  color: #000000;
 }
 
-.bill-item-status{
-    font-size: 1.8rem;
-    font-family: CmPrasanmitB;
-    color: #29D281;
+.bill-item-status {
+  font-size: 1.8rem;
+  font-family: CmPrasanmitB;
+  color: #29d281;
 }
 
 .bill-item-btl,
-.notification-item-timestamp{
-    width: 100%;
-    display: flex;
-    margin-top: 0.5rem;
-    justify-content: space-between;
+.notification-item-timestamp {
+  width: 100%;
+  display: flex;
+  margin-top: 0.5rem;
+  justify-content: space-between;
 }
 
 .bill-item-total,
-.notification-timestamp-date{
-    font-size: 2rem;
-    font-family: CmPrasanmitR;
-    color: #000000;
+.notification-timestamp-date {
+  font-size: 2rem;
+  font-family: CmPrasanmitR;
+  color: #000000;
 }
 
 .bill-item-price,
-.notification-timestamp-time{
-    font-size: 2rem;
-    font-family: CmPrasanmitR;
-    color: #000000;
+.notification-timestamp-time {
+  font-size: 2rem;
+  font-family: CmPrasanmitR;
+  color: #000000;
 }

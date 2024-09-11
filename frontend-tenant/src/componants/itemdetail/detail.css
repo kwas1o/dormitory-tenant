@@ -1,8 +1,13 @@
-.bill-detail-container {
+.bill-detail-container,
+.req-topic-container {
   background-color: #f3f3f3;
   margin-top: 0.5rem;
   padding: 1rem;
   border-radius: 0.8rem 0.8rem 0.8rem 0.8rem;
+}
+
+.req-topic-container {
+  height: 80vh;
 }
 
 .bill-detail-header {
@@ -17,7 +22,7 @@
   color: #000000;
 }
 
-.bill-header-month,  
+.bill-header-month,
 .bill-total-value,
 .bill-total-label {
   font-size: 2.5rem;
@@ -35,15 +40,20 @@
 .bill-detail-phase,
 .bill-detail-roomnumber,
 .bill-detail-date,
-.bill-detail-building {
+.bill-detail-building,
+.req-topic-status,
+.req-topic-id,
+.req-topic-date{
   width: 100%;
   display: flex;
   margin-top: 0.5rem;
   justify-content: space-between;
 }
 
-
-.bill-status-label {
+.bill-status-label,
+.req-topic-status,
+.req-topic-id,
+.req-topic-date {
   font-size: 2rem;
   font-family: CmPrasanmitR;
   color: #000000;
@@ -52,7 +62,6 @@
 .bill-status-value {
   font-size: 2rem;
   font-family: CmPrasanmitB;
-  color: #ff2d2d;
 }
 
 .bill-detail-id,
@@ -61,16 +70,16 @@
 .bill-detail-roomnumber,
 .bill-detail-date,
 .bill-detail-building {
-    font-size: 2rem;
-    font-family: CmPrasanmitR;
-    color: #000000;
-  }
+  font-size: 2rem;
+  font-family: CmPrasanmitR;
+  color: #000000;
+}
 
 /* section 2 */
 
 .bill-detail-water,
 .bill-detail-ele,
-.bill-detail-room{
+.bill-detail-room {
   font-size: 2.2rem;
   font-family: CmPrasanmitB;
   color: #000000;
@@ -78,19 +87,18 @@
 }
 
 .bill-detail-water {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
-
-.bill-detail-ele{
-    margin: 0;
+.bill-detail-ele {
+  margin: 0;
 }
-.bill-detail-eleper{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    font-size: 2rem;
-    font-family: CmPrasanmitR;
+.bill-detail-eleper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+  font-family: CmPrasanmitR;
 }
 
 /* total */
@@ -99,9 +107,66 @@
     font-family: CmPrasanmitR;
     color: #000000;
   } */
-  
-  /* .bill-total-value {
+
+/* .bill-total-value {
     font-size: 2.5rem;
     font-family: CmPrasanmitB;
     color: #000000;
   } */
+
+
+  .req-header-label {
+    font-size: 2.3rem;
+    font-family: CmPrasanmitB;
+    color: #000000;
+  }
+
+.req-topic-broken-label,
+.req-topic-month-label,
+.req-topic-paydate-label,
+.req-topic-out-label,
+.req-topic-tel-label,
+.req-topic-des-label,
+.req-topic-lease-label {
+  font-size: 2rem;
+  font-family: CmPrasanmitB;
+  color: #000000;
+}
+
+.req-topic-broken,
+.req-topic-lease,
+.req-topic-month,
+.req-topic-paydate,
+.req-topic-out,
+.req-topic-tel,
+.req-topic-des,
+.bill-detail-building {
+  width: 100%;
+  display: flex;
+  margin-top: 0.5rem;
+  justify-content: space-between;
+  font-size: 2rem;
+  font-family: CmPrasanmitR;
+  color: #000000;
+}
+
+.req-topic-des {
+
+  display: block;
+}
+
+
+
+.req-status-value {
+  font-size: 2rem;
+  font-family: CmPrasanmitB;
+} 
+
+.req-topic-header {
+  font-size: 2.5rem;
+  font-family: CmPrasanmitB;
+  color: #000000;
+}
+
+
+

@@ -38,9 +38,29 @@ const Home = () => {
       }
     };
 
+    const fetchUsername = async () => {
+      
+      try {
+        const response = await axios.get('http://localhost:3000/getUser', {
+          headers: {
+            'Authorization': `Bearer ${token}` // ส่งคีย์ไปยืนยันตัวตน
+          }
+        });
+        
+        // Store the data in the component's state
+        setUserData(response.data.username);
+  
+
+      } catch (error) {
+        console.error('Failed to fetch data');
+      }
+    };
+
+
 
 
     fetchUserBills();
+    fetchUsername();
 
   }, []);
 

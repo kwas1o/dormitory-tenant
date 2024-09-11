@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./form.css";
-import qrcode from "../../assets/qrcode.png";
 
 const RequestForm = () => {
   const [selectedTopic, setSelectedTopic] = useState("");
@@ -12,14 +11,21 @@ const RequestForm = () => {
 
   return (
     <div className="reqform-detail-container">
+      {/* main haeder */}
       <div className="reqform-detail-header">
         <p className="reqform-header-label">เขียนคำร้องขอ</p>
       </div>
 
+      {/* label and input field*/}
       <div className="reqform-detail-topic">
         <p className="reqform-topic-label">หัวข้อ</p>
         <div className="rf-topic-dropdown">
-          <select name="topic" id="rf-topic-choices" onChange={handleTopicChange}>
+          {/* handle topic change for display or display noe some input field base on the choice that user select */}
+          <select
+            name="topic"
+            id="rf-topic-choices"
+            onChange={handleTopicChange}
+          >
             <option value="">เลือกหัวข้อ</option>
             <option value="1">แจ้งซ่อม</option>
             <option value="2">แจ้งเลื่อนชำระหนี้</option>
@@ -29,6 +35,7 @@ const RequestForm = () => {
         </div>
       </div>
 
+      {/* number that use to compare depend on option */}
       {selectedTopic === "1" && (
         <div className="reqform-detail-broken">
           <p className="reqform-broken-label">อุปกรณ์ที่ชำรุด</p>
@@ -57,32 +64,32 @@ const RequestForm = () => {
 
       {selectedTopic === "2" && (
         <div className="reqform-topic-postpone">
-        <div className="reqform-detail-postpone">
-          <p className="reqform-postpone-label">เดือนที่เลื่อนชำระ</p>
-          <div className="rf-lease-dropdown">
-            <select name="topic" id="rf-postpone-choices">
-              <option value="">เลือกหัวข้อ</option>
-              <option value="1">แจ้งซ่อม</option>
-              <option value="2">แจ้งเลื่อนชำระหนี้</option>
-              <option value="4">แจ้งต่อสัญญา</option>
-              <option value="5">แจ้งออก</option>
-            </select>
+          <div className="reqform-detail-postpone">
+            <p className="reqform-postpone-label">เดือนที่เลื่อนชำระ</p>
+            <div className="rf-lease-dropdown">
+              <select name="topic" id="rf-postpone-choices">
+                <option value="">เลือกหัวข้อ</option>
+                <option value="1">แจ้งซ่อม</option>
+                <option value="2">แจ้งเลื่อนชำระหนี้</option>
+                <option value="4">แจ้งต่อสัญญา</option>
+                <option value="5">แจ้งออก</option>
+              </select>
+            </div>
+          </div>
+          <div className="reqform-detail-ppdate">
+            <p className="reqform-ppdate-label">ชำระภายในวันที่</p>
+            <div className="rf-lease-dropdown">
+              <input type="date" name="date" id="rf-postpone-date" />
+            </div>
           </div>
         </div>
-        <div className="reqform-detail-ppdate">
-          <p className="reqform-ppdate-label">ชำระภายในวันที่</p>
-          <div className="rf-lease-dropdown">
-            <input type="date" name="date" id="rf-postpone-date" />
-          </div>
-        </div>
-      </div>
       )}
 
       {selectedTopic === "4" && (
-      <div className="reqform-detail-out">
-      <p className="reqform-out-label">วันที่ย้ายออก</p>
-      <input type="date" name="date" id="rf-postpone-date" />
-    </div>
+        <div className="reqform-detail-out">
+          <p className="reqform-out-label">วันที่ย้ายออก</p>
+          <input type="date" name="date" id="rf-postpone-date" />
+        </div>
       )}
 
       {/* Always visible fields */}

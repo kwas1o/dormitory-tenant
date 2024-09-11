@@ -2,72 +2,50 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Sidebar from "../componants/sidebar/sidebar";
 import "../css/request.css";
-import BillsItem from "../componants/item/billsitem";
 import { Link } from "react-router-dom";
-import BillsDetail from "../componants/itemdetail/billsdetail";
 import Modal from "../componants/modal/modal";
 import PaymentDetail from "../componants/payment/paymentdetail";
 import RequestForm from "../componants/form/requestform";
+import RequestDetail from "../componants/itemdetail/requestdetail";
+import RequestItem from "../componants/item/requestitem";
 
 const Request = () => {
-  const [showModal, setShowModal] = useState(false);
   const [showRequestModal, setShowRequestModal] = useState(false);
-  const [selectedBillId, setSelectedBillId] = useState(null);
-  const [billsData, setBillsData] = useState([]);
-  const [userData, setUserData] = useState([]);
-  const [selectedBill, setSelectedBill] = useState(null);
+  const [selectedReqId, setSelectedReqId] = useState(null);
+  const [requestsData, setRequestsData] = useState([]);
+  const [selectedReq, setSelectedReq] = useState(null);
 
   useEffect(() => {
     const token = localStorage.getItem("userKey");
 
-    const fetchUserBills = async () => {
+    const fetchUserRequests = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/getBills", {
+        const response = await axios.get("http://localhost:3000/getRequest", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
         });
 
-        setBillsData(response.data.bill);
+        setRequestsData(response.data.request);
       } catch (error) {
         console.error("Failed to fetch data");
       }
     };
 
-    const fetchUserName = async () => {
-      try {
-        const response = await axios.get("http://localhost:3000/getUser", {
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
-        });
-
-        setUserData(response.data.username);
-      } catch (error) {
-        console.error("Failed to fetch data");
-      }
-    };
-
-    fetchUserBills();
-    fetchUserName();
+    fetchUserRequests();
   }, []);
-
-  const handlePaymentClick = () => {
-    setShowModal(true);
-  };
 
   const handleRequestClick = () => {
     setShowRequestModal(true);
   };
 
   const handleCloseModal = () => {
-    setShowModal(false);
     setShowRequestModal(false);
   };
 
-  const handleBillClick = (billId) => {
-    setSelectedBillId(billId);
-    setSelectedBill(billsData.find((bill) => bill.id === billId));
+  const handleReqClick = (reqId) => {
+    setSelectedReqId(reqId);
+    setSelectedReq(requestsData.find((req) => req.id === reqId));
   };
 
   return (
@@ -80,7 +58,7 @@ const Request = () => {
         <div className="r-mbt-content">
           <div
             className={`${
-              selectedBillId ? "r-mbtl-content-selected" : "r-mbtl-content"
+              selectedReqId ? "r-mbtl-content-selected" : "r-mbtl-content"
             }`}
           >
             <div className="r-text-header-l">
@@ -96,52 +74,45 @@ const Request = () => {
                   <p className="r-filter-type-label">สถานะ:</p>
                   <select name="status" id="r-filter-status">
                     <option value="all">ทั้งหมด</option>
-                    <option value="rill">ใบแจ้งหนี้</option>
-                    <option value="request">คำร้องขอ</option>
+                    <option value="rill">ดำเนินการแล้ว</option>
+                    <option value="request">รอดำเนินการ</option>
+                    <option value="request">ไม่ดำเนินการ</option>
                   </select>
                 </div>
               </div>
             </div>
 
             <div className="r-bills-list">
-              {billsData.map((bill) => (
-                <BillsItem
-                  key={bill.id}
-                  bill={bill}
-                  onClick={() => handleBillClick(bill.id)}
-                  isSelected={bill.id === selectedBillId}
-                />
-              ))}
+              {requestsData && requestsData.length > 0 ? (
+                requestsData.map((req) => (
+                  <RequestItem
+                    key={req.id}
+                    req={req}
+                    onClick={() => handleReqClick(req.id)}
+                    isSelected={req.id === selectedReqId}
+                  />
+                ))
+              ) : (
+                <p>No requests found.</p>
+              )}
             </div>
           </div>
 
-          {selectedBill && (
+          {selectedReq && (
             <div className="r-mbtr-content">
               <div className="r-text-header-r">
                 <p className="r-detail-label">รายละเอียด</p>
-                <Link className="r-to-pdf" to="/all-bills">
-                  PDF
-                </Link>
               </div>
               <div className="r-bills-detail">
-                <BillsDetail bill={selectedBill} />
-                {selectedBill.status === "ค้างชำระ" && (
-                  <Link className="r-to-payment" onClick={handlePaymentClick}>
-                    ชำระเงิน
-                  </Link>
-                )}
+                <RequestDetail req={selectedReq} />
               </div>
             </div>
           )}
         </div>
       </div>
 
-      <Modal show={showModal} handleClose={handleCloseModal}>
-        <PaymentDetail bill={selectedBill} />
-      </Modal>
-
       <Modal show={showRequestModal} handleClose={handleCloseModal}>
-        <RequestForm  />
+        <RequestForm />
       </Modal>
     </div>
   );
