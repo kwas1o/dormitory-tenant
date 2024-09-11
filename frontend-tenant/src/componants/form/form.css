@@ -1,0 +1,269 @@
+@tailwind components;
+@tailwind utilities;
+
+.reqform-detail-container {
+  background-color: #ffffff;
+  margin-top: 0.5rem;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.reqform-detail-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.reqform-header-label {
+  font-size: 2.5rem;
+  font-family: CmPrasanmitB;
+  color: #000000;
+}
+
+.reqform-header-month,
+.reqform-total-value,
+.reqform-total-label {
+  font-size: 2.5rem;
+  font-family: CmPrasanmitB;
+  color: #000000;
+}
+
+.reqform-detail-broken,
+.reqform-detail-postpone,
+.reqform-detail-lease,
+.reqform-detail-topic,
+.reqform-detail-des,
+.reqform-detail-ppdate,
+.reqform-detail-out,
+.reqform-detail-tel,
+.reqform-detail-date {
+  width: 100%;
+  display: flex;
+  margin-top: 0.5rem;
+  justify-content: space-between;
+}
+
+.reqform-status-label {
+  font-size: 2rem;
+  font-family: CmPrasanmitR;
+  color: #000000;
+}
+
+.reqform-status-value {
+  font-size: 2rem;
+  font-family: CmPrasanmitB;
+  color: #ff2d2d;
+}
+
+.reqform-detail-topic,
+.reqform-detail-tenant,
+.reqform-detail-broken,
+.reqform-postpone-label,
+.reqform-detail-des,
+.reqform-detail-tel,
+.reqform-detail-out,
+.reqform-detail-ppdate,
+.reqform-detail-lease {
+  font-size: 2rem;
+  font-family: CmPrasanmitR;
+  color: #000000;
+}
+
+/* section 2 */
+
+.reqform-detail-receipt,
+.reqform-detail-method,
+.reqform-detail-room,
+.reqform-detail-total {
+  font-size: 2.2rem;
+  font-family: CmPrasanmitB;
+  color: #000000;
+  margin: 1rem 0;
+}
+
+.reqform-detail-water {
+  margin-bottom: 0;
+}
+
+.reqform-detail-method {
+  margin: 0;
+}
+
+.reqform-method-qrcode{
+  display: flex;
+  margin-top: 0.5rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+
+.reqform-method-qrcode img{
+  width: 180px;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.reqform-method-qrcode-des{
+  font-size: 1.8rem;
+  font-family: CmPrasanmitR;
+  color: #000000;
+  text-align: center;
+}
+.reqform-receipt-input {
+  justify-content: space-between;
+}
+
+.reqform-receipt-re {
+  justify-content: space-between;
+  /* background-color: #dbf4ff; */
+  border-radius: 0.5rem;
+  margin-top: 0.8rem;
+  padding: 0.3rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.reqform-receipt-re:hover {
+  /* background-color: #92dbff; */
+}
+
+.reqform-receipt-input span {
+  font-family: CmPrasanmitR;
+  font-size: 2rem;
+  color: #545454;
+}
+.reqform-detail-submit {
+  margin-top: 2rem;
+  background-color: #50b498;
+  text-align: center;
+  border-radius: 2rem;
+  text-decoration: none;
+  padding: 0.6rem;
+}
+
+.reqform-detail-submit:hover {
+  background-color: #3a9c7f;
+}
+
+.reqform-detail-submit button {
+  font-size: 2.5rem;
+  font-family: CmPrasanmitB;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  color: #ffffff;
+}
+
+.selected-file {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.8rem;
+  font-family: CmPrasanmitR;
+  
+}
+
+.file-name {
+  margin-right: 10px;
+}
+
+.remove-file {
+  background-color: #ff4d4f;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 1rem;
+  margin-left: 1rem;
+  font-size: 1.3rem;
+  font-family: CmPrasanmitB;
+  
+}
+
+.rf-filter{
+  display: flex;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+}
+
+
+
+
+.r-filter-type-label{
+  font-size: 2rem;
+  color: #000000;
+  margin-left: 1rem !important;
+}
+
+#rf-topic-choices,
+#rf-lease-choices,
+#rf-broken-choices,
+#rf-postpone-choices{
+  width: 30rem;
+  height: 3rem;
+  background-color: #DEF9C4;
+  color: #000000;
+  margin-left: 0.8rem;
+  padding: 0.2rem 0.8rem;
+  font-family: CmPrasanmitB;
+  font-size: 2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  border: 0;
+  outline: none;
+  
+}
+
+
+#rf-postpone-date{
+  width: 28.4rem;
+  height: 3rem;
+  background-color: #DEF9C4;
+  color: #000000;
+  margin-left: 0.8rem;
+  padding: 0.2rem 0.8rem;
+  font-family: CmPrasanmitB;
+  font-size: 2rem;
+  border-radius: 0.5rem;
+  border: 0;
+  outline: none;
+  
+}
+
+#rf-input-tel{
+  width: 28.4rem;
+  height: 3rem;
+  background-color: #D6FFEB;
+  color: #000000;
+  margin-left: 0.8rem;
+  padding: 0.2rem 0.8rem;
+  font-family: CmPrasanmitB;
+  font-size: 2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  border: 0;
+  outline: none;
+}
+
+#rf-input-des{
+  width: 28.4rem;
+  height: 10rem;
+  background-color: #D6FFEB;
+  color: #000000;
+  margin-left: 0.8rem;
+  padding: 0.2rem 0.8rem;
+  font-family: CmPrasanmitB;
+  font-size: 2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  border: 0;
+  outline: none;
+}
+
+.r-filter-dropdown{
+  display: flex;
+}

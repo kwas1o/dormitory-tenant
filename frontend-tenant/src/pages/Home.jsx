@@ -38,29 +38,9 @@ const Home = () => {
       }
     };
 
-    const fetchUserName = async () => {
-      
-      try {
-        const response = await axios.get('http://localhost:3000/getUser', {
-          headers: {
-            'Authorization': `Bearer ${token}` // ส่งคีย์ไปยืนยันตัวตน
-          }
-        });
-        
-        // Store the data in the component's state
-        setUserData(response.data.username);
-        console.error('response.data: ', response.data);
-  
-
-      } catch (error) {
-        console.error('Failed to fetch data');
-      }
-    };
-
 
 
     fetchUserBills();
-    fetchUserName();
 
   }, []);
 
@@ -116,7 +96,7 @@ const Home = () => {
               ))}
             </div>
             <div className="h-to-allbills-link">
-              <Link to="/all-bills">ดูทั้งหมด...
+              <Link to="/bills">ดูทั้งหมด...
               </Link>
             </div>
           </div>
